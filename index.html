@@ -72,7 +72,7 @@
 
         <h2>Three equal-width child items, that will always remain inline</h2>
 
-        <p>The child item width is automatically calculated by <strong>parent width" &divide; number of child items</strong>.
+        <p>The child item width is automatically calculated by <strong>parent width &divide; number of child items</strong>.
 
         <div style="display: flex; flex-wrap: wrap; align-items: stretch">
             <div style="flex: 1"><code>style="flex: 1"</code></div>
@@ -82,9 +82,11 @@
 
         <hr>
 
-        <h2>“Responsive layout”: Child items with added <code>min-width</code> can do row-wrapping on narrow viewports</h2>
+        <h2>Accomplishing “Responsive layout” without media queries</h2>
         
-        <p>In this example the three child items all have <code>min-width: 400px</code>. Therefore at <strong>viewport width &lt; (3 &times; 400px) = &lt; 1200px</strong>, the third child item will wrap to a new row. And at <strong>viewport width &lt; (2 &times; 400px) = &lt; 800px</strong>, the second child item will wrap to a new row.</p>
+        <p>This is really simple to do. Child items with added <code>min-width</code> can “wrap” to a new row on narrow viewports.</p>
+        
+        <p>In this example below, the three child items all have <code>min-width: 400px</code> (you can do whatever you want). Therefore at <strong>viewport width &lt; (3 &times; 400px) = &lt; 1200px</strong>, the third child item will wrap to a new row. And at <strong>viewport width &lt; (2 &times; 400px) = &lt; 800px</strong>, the second child item will wrap to a new row.</p>
 
         <p>Reduce the width of your browser and you will see how this works in the example below.</p>
 
@@ -94,7 +96,7 @@
             <div style="flex: 1; min-width: 400px"><code>style="flex: 1; min-width: 400px"</code></div>
         </div>
 
-        <p>Note: The size and amount of content within the child items (e.g. your text and images) can also cause row-wrapping on narrow viewports. This is a good thing, because then your content doesn't overflow horizontally beyond the width of the viewport.</li>
+        <p>Note: The size and amount of content within the child items (e.g. your text and images) can also cause row-wrapping on narrow viewports. This is a good thing, because then your content doesn’t overflow horizontally beyond the width of the viewport.</li>
         </ul>
 
         <hr>
